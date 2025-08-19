@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dedicação de Amor — Julia e Gabriel</title>
+  <style>
+    :root{
+      --rosa-claro:#fde2e8; /* fundo principal */
+      --rosa-claro-2:#fff5f8; /* variação do fundo */
+      --rosa-escuro:#9d174d; /* texto/links */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--rosa-escuro);
+      background: linear-gradient(90deg, var(--rosa-claro), var(--rosa-claro-2), #f7cfe0);
+      background-size: 200% 200%;
+      animation: bgMove 10s linear infinite;
+    }
+    @keyframes bgMove{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    /* Header */
+    .header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter:saturate(1.2) blur(4px);
+      background:#fff; border-bottom:1px solid #ead1da;
+    }
+    .container{max-width:1100px; margin:0 auto; padding:12px 16px;}
+    .nav{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+    .nav a{
+      text-decoration:none; font-weight:600; font-size:14px;
+      color:var(--rosa-escuro); padding:8px 12px; border-radius:999px;
+      border:1px solid transparent; transition:.2s ease;
+    }
+    .nav a:hover{border-color:#f3a6bf; background:#fff0f5}
+
+    /* Hero */
+    .hero{min-height:calc(100vh - 64px); display:flex; align-items:center; justify-content:center; text-align:center; padding:0 16px}
+    .hero img{width:150px; height:auto; display:block; margin:0 auto 16px auto;}
+    .title{font-size:clamp(32px, 6vw, 56px); margin:0; font-weight:800}
+    .sub{font-size:clamp(18px, 3.5vw, 28px); margin:8px 0 6px}
+    .date{font-size:14px; opacity:.9}
+
+    /* Botão extra */
+    .extra-button{
+      display:block;
+      margin:40px auto;
+      padding:12px 24px;
+      background:#fff;
+      color:var(--rosa-escuro);
+      text-decoration:none;
+      font-weight:600;
+      border-radius:8px;
+      border:2px solid var(--rosa-escuro);
+      transition:all .2s ease;
+      text-align:center;
+      max-width:250px;
+    }
+    .extra-button:hover{background:#fff0f5;}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="como-comecou.html">Como começou</a>
+        <a href="vamos-nos-conhecer.html">Vamos nos conhecer!</a>
+        <a href="bom-dia-meu-amor.html">Bom dia, meu amor!</a>
+        <a href="o-encontro.html">O encontro</a>
+        <a href="o-primeiro-de-muitos.html">O primeiro de muitos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Página principal -->
+  <main class="hero">
+    <div>
+      <!-- Imagem pequena acima do texto principal -->
+      <img src="D:/HTML/SiteDeUmMes/imagens/hellobatman.png" alt="Hello Kitty e Batman fofinhos" />
+      <h1 class="title">Julia e Gabriel</h1>
+      <p class="sub">Um mês, milhões de sentimentos</p>
+      <p class="date">18/07/2025 - Forever</p>
+      <a class="extra-button" href="como-comecou.html">Como tudo começou?</a>
+    </div>
+  </main>
+
+
+</body>
+</html>

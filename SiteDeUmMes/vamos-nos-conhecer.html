@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vamos nos conhecer! — Julia e Gabriel</title>
+  <style>
+    :root{
+      --rosa-claro:#fde2e8;
+      --rosa-claro-2:#fff5f8;
+      --rosa-escuro:#9d174d;
+      --borda:#ead1da;
+      --rosa-hover:#fff0f5;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--rosa-escuro);
+      background: linear-gradient(90deg, var(--rosa-claro), var(--rosa-claro-2), #f7cfe0);
+      background-size: 200% 200%;
+      animation: bgMove 10s linear infinite;
+    }
+    @keyframes bgMove{ 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+
+    .header{ position:sticky; top:0; z-index:10; backdrop-filter:saturate(1.2) blur(4px); background:#fff; border-bottom:1px solid var(--borda); }
+    .container{max-width:1100px; margin:0 auto; padding:12px 16px;}
+    .nav{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+    .nav a{ text-decoration:none; font-weight:600; font-size:14px; color:var(--rosa-escuro); padding:8px 12px; border-radius:999px; border:1px solid transparent; transition:.2s ease; }
+    .nav a:hover{border-color:#f3a6bf; background:var(--rosa-hover)}
+
+    .section{max-width:900px; margin:0 auto; padding:60px 20px;}
+    .section h1{text-align:center; font-size:32px; margin-bottom:20px;}
+    .section img{max-width:100%; height:auto; display:block; margin:0 auto 20px auto; border-radius:12px;}
+    .section p{text-align:justify; line-height:1.6;}
+
+    .next-button{
+      display:block;
+      margin:40px auto 0;
+      padding:12px 24px;
+      background:var(--rosa-escuro);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      border-radius:8px;
+      transition:background .2s ease;
+      text-align:center;
+      max-width:200px;
+    }
+    .next-button:hover{background:#7a123d;}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="SiteDeUmMes.html">Início</a>
+        <a href="como-comecou.html">Como começou</a>
+        <a href="vamos-nos-conhecer.html">Vamos nos conhecer!</a>
+        <a href="bom-dia-meu-amor.html">Bom dia, meu amor!</a>
+        <a href="o-encontro.html">O encontro</a>
+        <a href="o-primeiro-de-muitos.html">O primeiro de muitos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <h1>Vamos nos conhecer!</h1>
+    <img src="D:/HTML/SiteDeUmMes/imagens/passagem.jpg" alt="Vamos nos conhecer" />
+    <p>
+      Marcar uma viagem com alguem que você não conhece, nunca viu sequer o rosto, e só conversou on-line, parece uma ideia um tanto quanto doida, não? Bom, diga isso para Gabriel e Julia de abril/2025. Não houve hesitação. Não houve duvida. Apenas dois jovens que, de alguma forma, sabiam que aquilo era o certo a se fazer.
+      <br> E que bom que tomamos essa decisão!!
+      <br> Planejar tudo, pensando em viver tudo juntos, foi mágico. E a partir de 12/04, tudo se resumiu a Belo Horizonte. Ele e ela. Ela e ele. Eu e você. Você e eu. Juntos, finalmente.
+    </p>  
+  </section>
+  <a class="next-button" href="bom-dia-meu-amor.html">Próxima página</a>
+</body>
+</html>
